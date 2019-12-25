@@ -40,6 +40,16 @@ body {
         #Container #Header #nav .nav a {
           text-decoration: none;
           color: #000; }
+    #Container #Header #search {
+      margin: auto 0px; }
+      #Container #Header #search input {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #FFF;
+        width: 70px; }
+      #Container #Header #search img {
+        width: 20px;
+        float: right; }
   #Container #Main {
     grid-area: Main; }
   #Container #Footer {
