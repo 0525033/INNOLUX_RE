@@ -15,9 +15,10 @@ body {
 #Container {
   height: 100vh;
   display: grid;
-  grid-template-rows: 7vh 85vh 8vh;
+  grid-template-rows: 7vh 1fr 30px;
   grid-template-areas: "Header" "Main" "Footer";
-  opacity: 0.9; }
+  opacity: 0.9;
+  grid-row-gap: 5vh; }
   #Container #Header {
     grid-area: Header;
     display: grid;
@@ -34,7 +35,8 @@ body {
       grid-column: 2;
       display: flex;
       flex-wrap: wrap;
-      align-items: center; }
+      align-items: center;
+      text-align: center; }
       #Container #Header #nav .nav {
         flex-grow: 1; }
         #Container #Header #nav .nav a {
@@ -46,7 +48,8 @@ body {
         background-color: transparent;
         border: none;
         border-bottom: 1px solid #FFF;
-        width: 70px; }
+        width: 100px;
+        display: none; }
       #Container #Header #search img {
         width: 20px;
         float: right; }
@@ -54,3 +57,25 @@ body {
     grid-area: Main; }
   #Container #Footer {
     grid-area: Footer; }
+
+#Footer {
+  font-size: small;
+  font-weight: 100;
+  color: #FFF; }
+  #Footer select {
+    background-color: transparent;
+    color: #FFF;
+    margin-left: 20px; }
+    #Footer select option {
+      color: #000; }
+  #Footer span {
+    margin: auto 20px 1px 50px;
+    float: right; }
+
+#Main {
+  display: grid;
+  grid-template-rows: 1fr 20vh; }
+  #Main #info {
+    grid-row: 2;
+    background-color: #000;
+    opacity: 0.5; }

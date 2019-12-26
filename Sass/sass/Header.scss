@@ -18,11 +18,12 @@ body{
 #Container{
     height: 100vh;
     display: grid;
-    grid-template-rows: 7vh 85vh 8vh;
+    grid-template-rows: 7vh 1fr 30px;
     grid-template-areas: "Header"
     "Main"
     "Footer";
     opacity: 0.9;
+    grid-row-gap: 5vh;
     #Header{
         grid-area: Header;
         display: grid;
@@ -41,6 +42,7 @@ body{
             display: flex;
             flex-wrap: wrap;
             align-items: center;
+            text-align: center;
             .nav{
                 flex-grow: 1;
                 a{
@@ -55,7 +57,8 @@ body{
                 background-color: transparent;
                 border: none;
                 border-bottom: 1px solid #FFF;
-                width: 70px;
+                width: 100px;
+                display: none;
             }
             img{
                 width: 20px;

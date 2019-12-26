@@ -1,0 +1,12 @@
+@import "Header.scss";
+@import "Footer.scss";
+
+#Main{
+    display: grid;
+    grid-template-rows: 1fr 20vh;
+    #info{
+        grid-row: 2;
+        background-color: #000;
+        opacity: 0.5;
+    }
+}
