@@ -75,7 +75,33 @@ body {
 #Main {
   display: grid;
   grid-template-rows: 1fr 20vh; }
+  #Main #banner {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 20vw;
+    grid-column-gap: 50px;
+    color: #FFF; }
+    #Main #banner #title {
+      grid-column: 1;
+      margin: auto auto 0px 50px; }
+    #Main #banner #partners {
+      grid-column: 2;
+      display: flex;
+      flex-direction: column;
+      font-size: 20px;
+      padding: 50px 0px; }
+      #Main #banner #partners .partner {
+        flex-grow: 1; }
+        #Main #banner #partners .partner a {
+          text-decoration: none;
+          color: #FFF; }
   #Main #info {
     grid-row: 2;
-    background-color: #000;
-    opacity: 0.5; }
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgba(0, 0, 0, 0.7); }
+    #Main #info .info {
+      flex-basis: 25%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis; }

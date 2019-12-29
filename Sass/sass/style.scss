@@ -4,9 +4,41 @@
 #Main{
     display: grid;
     grid-template-rows: 1fr 20vh;
+    #banner{
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 20vw;
+        grid-column-gap: 50px;
+        color: #FFF;
+        #title{
+            grid-column: 1;
+            margin: auto auto 0px 50px;
+        }
+        #partners{
+            grid-column: 2;
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+            padding: 50px 0px;
+            .partner{
+                flex-grow: 1;
+                a{
+                    text-decoration: none;
+                    color: #FFF;
+                }
+            }
+        }
+    }
     #info{
         grid-row: 2;
-        background-color: #000;
-        opacity: 0.5;
+        display: flex;
+        flex-wrap: nowrap;
+        background-color:rgba($color: #000000, $alpha: 0.7);
+        .info{
+            flex-basis: 25%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow:ellipsis ;
+        }
     }
 }
