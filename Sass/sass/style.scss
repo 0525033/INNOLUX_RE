@@ -7,7 +7,7 @@
     #banner{
         position: relative;
         display: grid;
-        grid-template-columns: 1fr 20vw;
+        grid-template-columns: 1fr 15vw;
         grid-column-gap: 50px;
         color: #FFF;
         #title{
@@ -35,6 +35,8 @@
         flex-wrap: nowrap;
         background-color:rgba($color: #000000, $alpha: 0.7);
         .info{
+            font-weight: 100;
+            color: #FFF;
             flex-basis: 25%;
             overflow: hidden;
             white-space: nowrap;
@@ -42,3 +44,4 @@
         }
     }
 }
+@import "Header_MO.scss";

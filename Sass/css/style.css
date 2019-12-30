@@ -78,7 +78,7 @@ body {
   #Main #banner {
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 20vw;
+    grid-template-columns: 1fr 15vw;
     grid-column-gap: 50px;
     color: #FFF; }
     #Main #banner #title {
@@ -101,6 +101,8 @@ body {
     flex-wrap: nowrap;
     background-color: rgba(0, 0, 0, 0.7); }
     #Main #info .info {
+      font-weight: 100;
+      color: #FFF;
       flex-basis: 25%;
       overflow: hidden;
       white-space: nowrap;
