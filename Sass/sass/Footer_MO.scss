@@ -1,0 +1,12 @@
+#Footer{
+    color: #FFF;
+    >div:nth-child(1){
+        font-size: 10px;
+        display: flex;
+        flex-wrap: nowrap;
+        text-align: center;
+        span{
+            flex-grow: 1;
+        }
+    }
+}

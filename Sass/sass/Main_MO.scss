@@ -1,0 +1,41 @@
+body{
+    margin: 0px;
+    Video{
+        position: fixed;
+        left: 0px;
+        bottom: 0px;
+        overflow: hidden;
+        min-width: 100vw;
+        min-height: 100vh;
+        z-index: -1;
+    }
+}
+#Main{
+    display: grid;
+    grid-template-rows: 50vh 1fr;
+    #banner{
+        position: relative;
+        grid-row: 1;
+        #title{
+            position: absolute;
+            bottom: 30px;
+            color: #FFF;
+        }
+    }
+    #info{
+        width: 100%;
+        white-space: nowrap;
+        display: inline;
+        overflow-x: scroll;
+        .info{
+            overflow-x: scroll;
+            white-space: nowrap;
+            display: inline-block;
+            width: 90vw;
+            background-color: #FFF;
+            padding: 20px 10px;
+            margin: 5vh 5vw;
+            border-radius: 10px;
+        }
+    }
+}

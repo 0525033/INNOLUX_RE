@@ -12,4 +12,11 @@ function change_content(){
 setInterval(change_content,3000);
 // 簡單內容輪播
 
-document.getElementsByClassName("partner").onmouseover=function(){this.style.color="#000"}
+document.getElementsByClassName("partner").onmouseover=function(){this.style.color="#000"};
+$("#menu_page").hide();
+$("#back_btn").hide();
+$(function(){
+    $("#menu").click(function(){
+        $("#menu_page").toggle("fast","swing");
+    });
+});

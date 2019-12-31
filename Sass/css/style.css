@@ -107,3 +107,14 @@ body {
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis; }
+
+@media screen and (max-width: 1000px) {
+  #Container {
+    height: 100vh; }
+    #Container #Header #nav {
+      display: none; }
+    #Container #Header #search {
+      grid-column: 2; }
+      #Container #Header #search input {
+        display: unset;
+        width: 90%; } }
